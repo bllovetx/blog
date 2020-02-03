@@ -1,0 +1,155 @@
+/*
+ *  header
+ */
+
+header {
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    color:white;
+}
+
+header hr {
+    width: 80%;
+    color: gray;
+    opacity: 0.6;
+}
+
+header h2 {
+    font-family: 'Baloo Bhai', cursive;
+    font-weight: lighter;
+    margin: 0;
+}
+
+header::before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100vh;
+    z-index: -10;
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: brightness(0.5);
+}
+/*
+ *  avatar
+ */
+
+.header-avatar{
+    width: 40%;
+    height: 0;
+    margin: 10% 30%;
+    padding: 15% 0 25% 0;
+    border-radius: 60%;
+    opacity: 70%;
+    text-align: center;
+    color: white;
+    font-size: 2.3vw;
+    background: center center;
+    background-size: cover;
+    position: absolute;
+}
+
+/*
+ *  avatar-animate
+ */
+
+
+.back {
+    z-index: 10;
+    transform: rotateY(90deg);
+}
+
+.avatar:hover .front {
+    animation: rotate-front 1.5s forwards ease-in-out;
+}
+
+.avatar:hover .back {
+    animation: rotate-back 1.5s forwards ease-in-out;
+}
+
+@keyframes rotate-front {
+    0%{ transform: rotateY(0deg) }
+    50%{ transform: rotateY(90deg) }
+    100%{ transform: rotateY(180deg) }
+}
+
+@keyframes rotate-back {
+    0%{ transform: rotateY(90deg) }
+    50%{ transform: rotateY(90deg) }
+    100%{ transform: rotateY(0deg) }
+}
+
+
+/*
+ *  motto
+ */
+
+header .motto {
+    margin: 55% 10% 0 10%;
+    font-family: 'Baloo Bhai', cursive, 'Zhi Mang Xing', cursive;
+    font-size: 1.5rem;
+}
+
+header .motto h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+}
+
+header .motto p {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ *  tags
+ */
+
+header .tags {
+    margin: 3% 10%;
+    font-size: 1rem;
+}
+
+
+tag {
+    font-size: 1rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    color: #fff;
+    border-style: solid;
+    border-color: rgb(250, 70, 151);
+    border-width: 0.1rem;
+    padding: 0.4rem 0.9rem;
+    margin: 0.3rem 0.4rem;
+}
+
+tag:hover {
+    border-color: #E70169;
+    background: rgba(250, 70, 151, 0.342);
+    color: #039AE7
+    ;
+}
+
+/*
+ *  friends
+ */
+
+header .friends {
+    margin: 3% 10%;
+    font-size: 1rem;
+}
+
+header .friends a {
+    margin: 0.3rem 0.4rem; 
+}
+
+header .friends a:hover {
+    text-decoration-line: underline;
+}

@@ -1,0 +1,38 @@
+<style>
+    header::before {
+        background-image: url('{{ site.baseurl }}{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');
+
+    }
+</style>
+
+<header>
+
+    <section class="avatar">
+        <h1 style="background-image: url('{{ site.baseurl }}{{ site.avatar }}')" class="header-avatar front"></h1>
+        <h1 style="background: #333" class="header-avatar back">Sorakaru<br>Blog</h1>
+    </section>
+
+    <section class="motto">
+        <p>若能避开猛烈的狂喜，自然不会有悲矜来袭，请赐予我愤怒的面具！</p>
+    </section>
+
+    {%- include follow.html -%}
+
+    <hr>
+
+    <section class="tags">
+        <h2>Tags:</h2>
+        {% for tag in page.tags %}
+            <tag>{{ tag }}</tag>
+        {% endfor %}
+    </section>
+
+    <hr>
+
+    <section class="friends">
+        <h2>Friends</h2>
+        {% for friend in site.friends %}
+            <a href="{{ friend.url }}" target="_blank" rel="{{ friend.title }}">{{ friend.title }}</a>
+        {% endfor %}
+    </section>
+</header>

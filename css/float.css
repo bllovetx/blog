@@ -1,0 +1,70 @@
+
+float {
+    position: fixed;
+    width: 10vw;
+    right: 0;
+    bottom: 0;
+    border-style: solid;
+    border-color: #F57E03;
+    border-radius: 1vw;
+    padding: 1vw;
+    padding-bottom: 0;
+    z-index: 10;
+}
+
+float:hover {
+    opacity: 0.5;
+}
+
+.i-triangle:before {
+    font-size: 2rem;
+    left: 5.5vw;
+    top: 0;
+    cursor: pointer;
+}
+
+.i-down:before {
+    content: "\f103";
+}
+.i-up:before {
+    content: "\f102";
+}
+.i-triangle {
+    color: #F57E03; 
+}
+.i-triangle:hover {
+    color:#E70169; 
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+#hito h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai', cursive, 'Zhi Mang Xing', cursive;
+}
+
+#hito {
+    margin: 0;
+    padding: 0;
+}
+
+#hito p {
+    font-size: 1.3rem;
+    color: #8DC211;
+}
+
+#hito h1 {
+    font-size: 1.2vw;
+    color: #F57E03;
+}
+
+
+
+
+
+
+#float-img {
+    width: 100%;
+}

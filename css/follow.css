@@ -1,0 +1,86 @@
+/*
+ *  follow
+ */
+
+#follow {
+    margin: 2% 10%;
+    font-size:1.5rem;
+    text-align: center;
+}
+
+/*
+ *  php
+ */
+.php {
+    text-align: center;
+    font-size: larger;
+    margin: 2% auto;
+}
+
+#follow .php-favicon {
+    padding: 4%;
+    margin-right: 20px; 
+    background: center center no-repeat;
+    background-size: contain;
+}
+
+.php a {
+    font-size: 2.2vw;
+}
+
+
+/*
+ *  Font Awesome
+ */
+
+
+ 
+#follow span {
+    position: relative;
+    display: inline-block;
+    width: 3vw;
+    height: 3vw;
+    padding-right: 1.5vw;
+    line-height: 3vw;
+    text-align: center;
+}
+
+i:before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    font-size: 3vw;
+    left:1vw;   /* FontAwesome shift right for some reason */
+    position: absolute;
+}
+
+.i-github:before  {
+    content: "\f09b";
+}
+
+.i-twitter:before {
+    content: "\f099";
+}
+
+.i-zhihu:before {
+    content: "\f111";
+}
+
+.text-zhihu {
+    position: absolute;
+    font-size: 1.5vw;
+    color: rgba(51, 51, 51, 0.842);
+    z-index: 10;
+    font-style: normal;
+    font-weight: lighter;
+}
+
+.i-linkedin:before {
+    content: "\f08c";
+}
+
+.i-facebook:before {
+    content: "\f09a";
+}

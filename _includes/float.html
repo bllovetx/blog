@@ -1,0 +1,63 @@
+{% if site.hito or site.floatimg %}
+<float>
+    {% if site.hito %}
+        <!-- 一言 api -->
+        <section id="hito"><i type="button" id="i-hito" class="i-triangle i-down" onclick="flipHito()"></i>
+            <h1 id="hitokoto_title"> 一言（ヒトコト）</h1>
+            <p id="hitokoto" class="red">:D 获取中...</p>
+            <p id="hitokoto_author" class="red">:D 获取中...</p>
+            <script>
+                document.getElementById('hitokoto').style.fontSize="1.3rem";
+                function flipHito() {
+                    if (document.getElementById('i-hito').classList.contains('i-down')) {
+                        if (document.getElementById('hitokoto').style.fontSize == "1.3rem") {
+                            document.getElementById('hitokoto_title').style.fontSize="0";
+                            document.getElementById('hitokoto').style.fontSize="0";
+                            document.getElementById('hitokoto_author').style.fontSize="0";
+                    {% if site.floatimg %}
+                        } else {
+                            document.getElementById('float-img').style.width="0px";
+                    {% endif %}
+                            document.getElementById('i-hito').classList.remove('i-down');
+                            document.getElementById('i-hito').classList.add('i-up');
+                        }
+                    } else {
+                    {% if site.floatimg %}
+                        if (document.getElementById('float-img').style.width == "0px") {
+                            document.getElementById('float-img').style.width="100%";
+                        } else {
+                    {% endif %}
+                            document.getElementById('hitokoto_title').style.fontSize="1.2vw";
+                            document.getElementById('hitokoto').style.fontSize="1.3rem";
+                            document.getElementById('hitokoto_author').style.fontSize="1.3rem";
+                            document.getElementById('i-hito').classList.remove('i-up');
+                            document.getElementById('i-hito').classList.add('i-down');
+                    {% if site.floatimg %}
+                        }
+                    {% endif %}
+                    }
+
+                }
+                fetch('https://v1.hitokoto.cn/?c=a')
+                .then(function (res){
+                    return res.json();
+                })
+                .then(function (data) {
+                    var hitokoto = document.getElementById('hitokoto');
+                    hitokoto.innerText = data.hitokoto;
+                    var hitokoto_author = document.getElementById('hitokoto_author');
+                    hitokoto_author.innerText = "——"+data.from;  
+                })
+                .catch(function (err) {
+                    console.error(err);
+                })
+            </script>
+        </section>  <!-- 一言 end here-->
+    {% endif %}
+
+    {% if site.floatimg %}
+        <img src="{{ site.baseurl }}{{ site.floatimg }}" id="float-img" class="float-img" alt="float img">
+    {% endif %}
+    
+</float>
+{% endif %}

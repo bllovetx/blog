@@ -1,0 +1,54 @@
+<div id="follow">
+
+    {% if site.phpurl %}
+        <section class="php">
+            {% if site.php-favicon %}
+                <a class="php-favicon" href="https://{{ site.phpurl }}" target="_blank" style="background: url('{{ site.php-favicon }}') center center no-repeat;background-size: contain;"></a>
+            {% endif %}
+            <a href="https://{{ site.phpurl }}" target="_blank" >{{ site.phpurl }}</a>
+        </section>
+    {% endif %}
+
+    {% if site.github-usrname %}
+        <a href="https://github.com/{{ site.github-usrname }}" target="_blank" rel="">
+            <span class="follow-icon">
+                <i class="i-github"></i>
+            </span>
+        </a>
+    {% endif %}
+    
+    {% if site.twitter-usrname %}
+        <a href="https://twitter.com/{{ site.twitter-usrname }}" target="_blank" rel="">
+            <span class="follow-icon">
+                <i class="i-twitter"></i>
+            </span>
+        </a>
+    {% endif %}
+    
+    {% if site.facebook-usrname %}
+        <a href="https://www.facebook.com/{{ site.facebook-usrname }}" target="_blank" rel="">
+            <span class="follow-icon">
+                <i class="i-facebook"></i>
+            </span>
+        </a>
+    {% endif %}
+    
+    
+    {% if site.zhihu-usrname %}
+        <a href="https://www.zhihu.com/people/{{ site.zhihu-usrname }}" target="_blank" rel="">
+            <span class="follow-icon">
+                <i class="i-zhihu"></i>
+                <i class="text-zhihu">知</i>
+            </span>
+        </a>
+    {% endif %}   
+
+    {% if site.linkedin-usrname %}
+        <a href="https://www.linkedin/in/{{ site.linkedin-usrname }}" target="_blank" rel="">
+            <span class="follow-icon">
+                <i class="i-linkedin"></i>
+            </span>
+        </a>
+    {% endif %}
+ 
+</div>

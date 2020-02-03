@@ -1,35 +1,52 @@
-# Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
+###################################
+# Hi! Welcome to blog of 曾许曌秋 #
+#################################
+#
+# This config file is meant for settings that affect the whole blog, values
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+# Site info
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.zxzq.me" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+SEOTitle: 曾许曌秋的博客 | blog of Sorakaru
+description: >- # this means to ignore newlines until next one
+  This is blog of 曾许曌秋, enjoy!
+keywords:
+avatar: /images/rain.jpg
+header-img: /images/30.jpg
+
+# Follow
+email: 1312660923@qq.com
+phpurl: zxzq.me # by default: https:// (can be changed in _include/follow.html)
+php-favicon: https://zxzq.me/images/favicon.ico
+twitter-usrname:  bllovetx
+github-usrname:   bllovetx
+zhihu-usrname:    bllovetx
+linkedin-usrname: bllovetx
+
+# float
+floatimg: /images/megumin.gif
+hito: on
+
 
 # Build settings
 markdown: kramdown
-# theme: minima
+# #theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+
+
+friends: [
+  {
+    title: "testing",
+    url: "https://test.zxzq.me"
+  }
+]
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

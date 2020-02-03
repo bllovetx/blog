@@ -1,0 +1,21 @@
+
+html {
+    font-family: 'Courgette', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(250, 70, 151);
+    font-weight: bold;
+    font-family: 'Courgette', cursive;
+}
+
+a:hover {
+    color: #E70169;
+}
+
+main {
+    position: absolute;
+    left: 30%;
+    width: 70%;
+}
