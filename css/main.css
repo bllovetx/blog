@@ -5,6 +5,7 @@
 
 /*
  *  
+ *  #E70169 red
  *  #8DC211 green
  *  #F57E03 orange
  *  #039AE7 blue
@@ -15,3 +16,6 @@
 {% include_relative header.css %}
 {% include_relative follow.css %}
 {% include_relative float.css %}
+{% include_relative pos.css %}
+{% include_relative footer.css %}
+{% include_relative nav.css %}

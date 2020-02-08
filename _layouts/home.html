@@ -2,4 +2,11 @@
 layout: default
 ---
 
-{%- include nav.html -%}
+<div id="container">
+    {%- include pos.html -%}
+    {%- include nav.html -%}
+        <div id="main">
+            {{ content }}
+        </div>
+    {%- include footer.html -%}
+</div>

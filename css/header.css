@@ -3,7 +3,7 @@
  */
 
 header {
-    width: 30%;
+    width: 30vw;
     height: 100vh;
     position: fixed;
     color:white;
@@ -12,7 +12,7 @@ header {
 header hr {
     width: 80%;
     color: gray;
-    opacity: 0.6;
+    opacity: 0.2;
 }
 
 header h2 {
@@ -27,7 +27,7 @@ header::before {
     position: fixed;
     left: 0;
     top: 0;
-    width: 30%;
+    width: 30vw;
     height: 100vh;
     z-index: -10;
     background: no-repeat center center;
@@ -124,7 +124,7 @@ tag {
     border-radius: 0.5rem;
     color: #fff;
     border-style: solid;
-    border-color: rgb(250, 70, 151);
+    border-color: #bfbfbf; /* rgb(250, 70, 151);*/
     border-width: 0.1rem;
     padding: 0.4rem 0.9rem;
     margin: 0.3rem 0.4rem;

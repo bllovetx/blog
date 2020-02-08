@@ -1,0 +1,42 @@
+/*
+ *  nav
+ */
+
+.pap {
+    width: 100%;
+    box-shadow: 0.2rem 0.2rem 0.2rem #bfbfbf;
+    margin: 2rem 0;
+}
+
+.pap:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0.4rem 0.4rem 0.2rem #bfbfbf;
+}
+
+.pap:hover a {
+    color: #E70169;
+}
+
+.nav-img {
+    display: block;
+    float: left;
+    width: 30%;
+    min-height: 200px;
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.nav-content {
+    display: block;
+    float: left;
+    min-height: 200px;
+    width: 70%;
+    text-align: left;
+}
+
+.nav-abs {
+    padding: 0.3rem 0.5rem;
+}

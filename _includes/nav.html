@@ -1,0 +1,18 @@
+<section class="nav">
+    <section class="pap">
+        <h1>Navigation:</h1>
+    </section>
+    {% for post in site.posts %}
+        <section class="pap">
+            <section class="nav-img" style="background-image: url('{{ site.baseurl }}{% if post.header-img %}{{ post.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+            </section>
+            <section class="nav-content">
+                <section class="nav-abs">
+                    <a href="{{ site.baseurl }}{{ post.url }}" target="_blank">{{ post.title }}</a>
+                <p>{{ post.date }} {{ post.author }}</p>
+                </section>
+            </section>
+            <div class="clear"></div>
+        </section>
+    {% endfor %}
+</section>

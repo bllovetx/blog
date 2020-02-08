@@ -1,0 +1,13 @@
+<section id="pos">
+    <a href="{{ site.baseurl }}/" target="_blank" class="{% if page.url == '/' %}current{% endif%}">{{ site.SEOTitle }}</a>
+
+    {% if page.category %}
+        &nbsp;&nbsp;/&nbsp;&nbsp;
+        <a href="{{ site.baseurl }}/{{ page.category }}" target="_blank">{{ page.category }}</a>
+    {% endif %}
+
+    {% if page.url != '/' %}
+        &nbsp;&nbsp;/&nbsp;&nbsp;
+        <a href="{{ site.baseurl }}{{ page.url }}" target="_blank" class="current">{{ page.title }}</a>
+    {% endif  %}
+</section>

@@ -1,0 +1,18 @@
+#footer {
+    width: 50vw;
+}
+
+#footer hr {
+    color: #bfbfbf;
+    opacity: 0.3;
+}
+#footer p {
+    color: rgba(245, 124, 3, 0.6);
+}
+
+#footer a {
+    color: rgba(141, 194, 17, 0.7);
+}
+#footer a:hover {
+    color: rgba(231, 1, 104, 0.9);
+}

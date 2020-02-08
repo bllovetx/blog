@@ -1,11 +1,24 @@
 
 html {
     font-family: 'Courgette', cursive;
+    overflow-x: hidden;
+}
+
+#container {
+    position: absolute;
+    left: 30vw;
+    width: 50vw;
+    padding: 0 10vw;
+    margin: 0;
+}
+
+#main {
+    min-height: 70vh;
 }
 
 a {
     text-decoration: none;
-    color: rgb(250, 70, 151);
+    color: #bfbfbf; /*rgb(250, 70, 151);*/
     font-weight: bold;
     font-family: 'Courgette', cursive;
 }
@@ -14,8 +27,6 @@ a:hover {
     color: #E70169;
 }
 
-main {
-    position: absolute;
-    left: 30%;
-    width: 70%;
+.clear {
+    clear: both;
 }

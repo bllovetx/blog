@@ -34,6 +34,7 @@ hito: on
 
 # Build settings
 markdown: kramdown
+permalink: pretty
 # #theme: minima
 plugins:
   - jekyll-feed

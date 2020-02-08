@@ -1,0 +1,28 @@
+/*
+ *  pos
+ */
+
+#pos {
+    margin: 60px 0;
+    width: 50vw;
+}
+
+#pos a {
+    margin: 0;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+#pos a:hover {
+    text-decoration: underline;
+    transform: translateY(-0.2rem);
+    text-shadow: 0.03rem 0.03rem 0.01rem #bfbfbf;
+}
+
+#pos .current {
+    color: #039AE7;
+}
+
+#pos .current:hover {
+    color: #E70169;
+}
